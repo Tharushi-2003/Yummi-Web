@@ -40,6 +40,7 @@ export default function Special() {
   const dishes = [dish1, dish2, dish3, dish4, dish5];
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Auto-play
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % dishes.length);
@@ -51,13 +52,34 @@ export default function Special() {
 
   return (
     <div className="specials-container">
-      <div className="dish-card">
-        <img src={currentDish.image} alt={currentDish.title} className="dish-image" />
-        <div className="dish-info">
-          <h2 className="dish-title">{currentDish.title}</h2>
-          <p className="dish-desc">{currentDish.desc}</p>
-          <p className="dish-price">Price: {currentDish.price}</p>
+      <h2 className="page-heading">Our Special Dishes</h2>
+
+      <div className="dish-card-wrapper">
+        {/* Left arrow */}
+        <button 
+          className="arrow left" 
+          onClick={() => setCurrentIndex((prev) => (prev - 1 + dishes.length) % dishes.length)}
+        >
+          ❮
+        </button>
+
+        {/* Dish card */}
+        <div className="dish-card">
+          <img src={currentDish.image} alt={currentDish.title} className="dish-image" />
+          <div className="dish-info">
+            <h2 className="dish-title">{currentDish.title}</h2>
+            <p className="dish-desc">{currentDish.desc}</p>
+            <p className="dish-price">Price: {currentDish.price}</p>
+          </div>
         </div>
+
+        {/* Right arrow */}
+        <button 
+          className="arrow right" 
+          onClick={() => setCurrentIndex((prev) => (prev + 1) % dishes.length)}
+        >
+          ❯
+        </button>
       </div>
     </div>
   );

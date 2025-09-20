@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Special from './Pages/Special';
+import Specials from './Pages/Specials';
+import Special from './Component/Special';
 
 function App() {
   return (
     <div className="App">
-      <Special/>
+      <Specials/>
     </div>
   );
 }
