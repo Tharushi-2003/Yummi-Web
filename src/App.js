@@ -12,13 +12,13 @@ function App() {
       <nav className="navbar">
         <div className="logo">Yummi Restaurant</div>
         <ul className="nav-links">
-          <li 
+          <li
             className={activeSection === "Specials" ? "active" : ""}
             onClick={() => setActiveSection("Specials")}
           >
             Specials
           </li>
-          <li 
+          <li
             className={activeSection === "Menu" ? "active" : ""}
             onClick={() => setActiveSection("Menu")}
           >
