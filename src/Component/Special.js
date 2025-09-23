@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Special.css'; // CSS import
+import './Special.css'; 
 
 export default function Special() {
   const dish1 = {
@@ -40,7 +40,7 @@ export default function Special() {
   const dishes = [dish1, dish2, dish3, dish4, dish5];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-play
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % dishes.length);
@@ -55,7 +55,7 @@ export default function Special() {
       <h2 className="page-heading">Our Special Dishes</h2>
 
       <div className="dish-card-wrapper">
-        {/* Left arrow */}
+        
         <button 
           className="arrow left" 
           onClick={() => setCurrentIndex((prev) => (prev - 1 + dishes.length) % dishes.length)}
@@ -63,7 +63,7 @@ export default function Special() {
           ❮
         </button>
 
-        {/* Dish card */}
+        
         <div className="dish-card">
           <img src={currentDish.image} alt={currentDish.title} className="dish-image" />
           <div className="dish-info">
@@ -73,7 +73,7 @@ export default function Special() {
           </div>
         </div>
 
-        {/* Right arrow */}
+       
         <button 
           className="arrow right" 
           onClick={() => setCurrentIndex((prev) => (prev + 1) % dishes.length)}
