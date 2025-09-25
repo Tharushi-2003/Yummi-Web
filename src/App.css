@@ -91,3 +91,81 @@
   font-size: 1rem;
   color: #666;
 }
+
+/* App.css */
+
+/* --- Home Page Content Styling --- */
+.home-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+
+.home-main-image {
+  max-width: 700px; /* Increased size for the central pizza image */
+  width: 140%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.home-main-image:hover {
+  transform: scale(1.02);
+}
+
+.home-side-media {
+  width: 400px; /* Increased width for the side videos/images */
+  height: 550px; /* Increased height for the side videos/images */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.home-side-media:hover {
+  transform: scale(1.03);
+}
+
+/* --- Responsive adjustments to make it look good on all devices --- */
+@media (max-width: 1200px) {
+  .home-main-image {
+    max-width: 600px;
+  }
+  .home-side-media {
+    width: 350px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-content-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+  .home-main-image,
+  .home-side-media {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content-container {
+    padding: 20px 10px;
+  }
+  .home-main-image,
+  .home-side-media {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,41 @@
+/* Header.css */
+.header-container {
+  background-color: #ff6347; /* A vibrant orange color */
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: sans-serif;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
