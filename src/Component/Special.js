@@ -46,7 +46,7 @@ export default function Special() {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % dishes.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [dishes.length]);
 
   const currentDish = dishes[currentIndex];
 
