@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import resImage from '../images/res.png'; // your image path
 
 const About = () => {
   return (
@@ -10,7 +9,8 @@ const About = () => {
       </h1>
       
       <div className="about-content">
-        <img src={resImage} alt="About Us" className="about-image" />
+        <img src="/images/res.jpeg" alt="About Us" className="about-image" />
+
         <div className="about-text">
           <p>Welcome to <strong>Yummi Restaurant</strong>, where every dish is crafted with love and fresh ingredients.</p>
           <p>Our mission is to provide an unforgettable dining experience with great food, cozy ambiance, and excellent service.</p>
@@ -22,5 +22,3 @@ const About = () => {
 };
 
 export default About;
-
-

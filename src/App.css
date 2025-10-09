@@ -108,7 +108,7 @@
 }
 
 .home-main-image {
-  max-width: 700px; /* Increased size for the central pizza image */
+  max-width: 700px; 
   width: 140%;
   height: auto;
   border-radius: 15px;
@@ -123,8 +123,8 @@
 }
 
 .home-side-media {
-  width: 400px; /* Increased width for the side videos/images */
-  height: 550px; /* Increased height for the side videos/images */
+  width: 400px; 
+  height: 550px; 
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -135,7 +135,7 @@
   transform: scale(1.03);
 }
 
-/* --- Responsive adjustments to make it look good on all devices --- */
+
 @media (max-width: 1200px) {
   .home-main-image {
     max-width: 600px;
