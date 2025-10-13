@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Special from "./Component/Special";
 import Menu from "./Component/Menu";
-import Contact from "./Component/Contact";
 import Header from "./Component/Header";
 import About from "./Component/About"; 
 import "./App.css";
@@ -10,6 +9,7 @@ import Footer from "./Component/Footer";
 import pizzaHomeImage from './pizza.jpg';
 import leftVideo from './videos/Food01.mp4';
 import rightVideo from './videos/Food02.mp4';
+import Contact from "./Component/Contact";
 
 
 function App() {
@@ -35,8 +35,11 @@ function App() {
         return <Menu />;
       case "Contact":
         return <Contact />;
+
       case "About": 
         return <About />;
+      case "Contact": 
+        return <Contact />; 
       default:
         return <div>Section not found</div>;
     }
