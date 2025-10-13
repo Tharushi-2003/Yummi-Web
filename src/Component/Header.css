@@ -1,4 +1,5 @@
 /* Header.css */
+
 .header-container {
   background-color: #ff6347; /* A vibrant orange color */
   color: #fff;
@@ -27,6 +28,18 @@
 
 .navbar li {
   margin: 0 15px;
+  cursor: pointer; /* Makes it look clickable */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #f0f0f0;
+}
+
+.navbar li.active {
+  text-decoration: underline; /* Highlight active section */
+  color: #fff;
 }
 
 .navbar a {
