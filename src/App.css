@@ -1,4 +1,4 @@
-/* Navigation Bar */
+/* ------------------- NAVIGATION BAR ------------------- */
 .navbar {
   background-color: #ff6f61;
   padding: 15px 30px;
@@ -43,7 +43,72 @@
   font-weight: bold;
 }
 
-/* Specials Section */
+/* ------------------- HERO SECTION ------------------- */
+#hero {
+  background: url("/images/hero-bg.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#hero button {
+  background-color: #ff6b35;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #e55a2b;
+}
+
+/* ------------------- CATEGORY NAVIGATION ------------------- */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+.category-nav button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-nav button:hover {
+  background-color: #e85a4f;
+  transform: scale(1.05);
+}
+
+.category-nav button.active {
+  background-color: #d94f3d;
+}
+
+/* ------------------- SPECIALS SECTION ------------------- */
 .specials-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -92,9 +157,7 @@
   color: #666;
 }
 
-/* App.css */
-
-/* --- Home Page Content Styling --- */
+/* ------------------- HOME PAGE LAYOUT ------------------- */
 .home-content-container {
   display: flex;
   justify-content: center;
@@ -135,7 +198,7 @@
   transform: scale(1.03);
 }
 
-
+/* ------------------- RESPONSIVE DESIGN ------------------- */
 @media (max-width: 1200px) {
   .home-main-image {
     max-width: 600px;
