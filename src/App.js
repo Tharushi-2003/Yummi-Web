@@ -9,6 +9,7 @@ import Footer from "./Component/Footer";
 import pizzaHomeImage from './pizza.jpg';
 import leftVideo from './videos/Food01.mp4';
 import rightVideo from './videos/Food02.mp4';
+import Contact from "./Component/Contact";
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
         return <Menu />;
       case "About": 
         return <About />;
+      case "Contact": 
+        return <Contact />; 
       default:
         return <div>Section not found</div>;
     }
