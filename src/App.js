@@ -3,7 +3,7 @@ import Special from "./Component/Special";
 import Menu from "./Component/Menu";
 import Contact from "./Component/Contact";
 import Header from "./Component/Header";
-import About from "./Component/About"; // IMPORT About
+import About from "./Component/About"; 
 import "./App.css";
 import Footer from "./Component/Footer";
 
@@ -35,7 +35,7 @@ function App() {
         return <Menu />;
       case "Contact":
         return <Contact />;
-      case "About": // ✅ NEW CASE
+      case "About": 
         return <About />;
       default:
         return <div>Section not found</div>;

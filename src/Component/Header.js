@@ -1,12 +1,29 @@
 import React from 'react';
 import './Header.css';
 
+import kitchenBackground from '../Background.png.jpeg'; 
+
 const Header = ({ activeSection, setActiveSection }) => {
+    
+  
+  const headerStyle = {
+
+    backgroundImage: `url(${kitchenBackground})`, 
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    
+    
+    backgroundColor: 'transparent', 
+  };
+    
   return (
-    <header className="header-container">
+    
+    <header className="header-container" style={headerStyle}> 
       <nav className="navbar">
         <div className="logo">Yummi Restaurant</div>
         <ul className="nav-links">
+      
           <li className={activeSection === "Home" ? "active" : ""} onClick={() => setActiveSection("Home")}>Home</li>
           <li className={activeSection === "Specials" ? "active" : ""} onClick={() => setActiveSection("Specials")}>Specials</li>
           <li className={activeSection === "Menu" ? "active" : ""} onClick={() => setActiveSection("Menu")}>Menu</li>

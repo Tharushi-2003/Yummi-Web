@@ -1,26 +1,32 @@
+/* Special.css */
+
 .specials-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Ensures the background covers the entire viewport height */
   height: 100vh;
   justify-content: center;
+  /* Sets the main container background to your dark green */
+  background-color: #11763b; 
 }
-
 
 
 .page-heading {
   font-family: 'Poppins', sans-serif; 
   font-size: 2.5rem;
   font-weight: 800; 
-  color: #080808;
+  /* Sets heading color to white for high contrast */
+  color: #ffffff; 
   margin-bottom: 25px;
   position: relative;
   z-index: 2;
   text-align: center;
   text-transform: uppercase; 
   letter-spacing: 2px; 
-  text-shadow: 2px 2px 8px rgba(23, 22, 22, 0.4),
-               0 0 15px rgba(253, 249, 249, 0.7);
+  /* Adjusted text shadow for better visibility on dark green */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6),
+               0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 
@@ -32,12 +38,18 @@
 }
 
 .dish-card {
-  background: white;
+  /* FIX: Change background from 'white' to match the container green */
+  background: #f6f6f6; 
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
   text-align: center;
   width: 700px;
+}
+
+/* NEW: Style for the text inside the dish card to ensure it's readable */
+.dish-title, .dish-desc, .dish-price { 
+    color: rgb(0, 0, 0); /* Make text white for contrast */
 }
 
 .dish-image {
@@ -48,7 +60,8 @@
 }
 
 .arrow {
-  background: white;
+  /* Arrows are typically left white or light-colored for visibility/design */
+  background: white; 
   border: none;
   font-size: 2rem;
   cursor: pointer;
