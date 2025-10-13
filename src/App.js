@@ -4,11 +4,13 @@ import Menu from "./Component/Menu";
 import Contact from "./Component/Contact";
 import Header from "./Component/Header";
 import "./App.css";
+import Footer from "./Component/Footer";
 
 // Import your image and video files
 import pizzaHomeImage from './pizza.jpg';
 import leftVideo from './videos/Food01.mp4'; // Path to your left video
 import rightVideo from './videos/Food02.mp4'; // Path to your right video
+
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -59,6 +61,7 @@ function App() {
     <div>
       <Header setActiveSection={setActiveSection} activeSection={activeSection} />
       {renderContent()}
+      <Footer />
     </div>
   );
 }
