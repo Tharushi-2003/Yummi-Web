@@ -5,10 +5,12 @@ import Contact from "./Component/Contact";
 import Header from "./Component/Header";
 import About from "./Component/About"; 
 import "./App.css";
+import Footer from "./Component/Footer";
 
 import pizzaHomeImage from './pizza.jpg';
 import leftVideo from './videos/Food01.mp4';
 import rightVideo from './videos/Food02.mp4';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -44,6 +46,7 @@ function App() {
     <div>
       <Header setActiveSection={setActiveSection} activeSection={activeSection} />
       {renderContent()}
+      <Footer />
     </div>
   );
 }
