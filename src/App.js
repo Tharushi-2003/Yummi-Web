@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Special from "./Component/Special";
 import Menu from "./Component/Menu";
-import Contact from "./Component/Contact";
 import Header from "./Component/Header";
 import About from "./Component/About"; 
 import "./App.css";
@@ -33,8 +32,6 @@ function App() {
         return <Special />;
       case "Menu":
         return <Menu />;
-      case "Contact":
-        return <Contact />;
       case "About": 
         return <About />;
       default:

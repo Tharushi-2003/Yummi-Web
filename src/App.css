@@ -1,4 +1,4 @@
-/* Navigation Bar */
+
 .navbar {
   background-color: #ff6f61;
   padding: 15px 30px;
@@ -43,7 +43,7 @@
   font-weight: bold;
 }
 
-/* Specials Section */
+
 .specials-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -92,9 +92,7 @@
   color: #666;
 }
 
-/* App.css */
 
-/* --- Home Page Content Styling --- */
 .home-content-container {
   display: flex;
   justify-content: center;
