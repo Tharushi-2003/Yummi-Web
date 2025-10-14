@@ -1,11 +1,13 @@
 .menu {
   padding: 40px;
   text-align: center;
+  background-color: #11763b;
 }
 
 .menu h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #eee;
 }
 
 .category-buttons {

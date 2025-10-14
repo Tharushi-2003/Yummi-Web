@@ -1,6 +1,6 @@
-/* Navigation Bar */
+
 .navbar {
-  background-color: #ff6f61;
+  background-color: #11763b;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@
   font-weight: bold;
 }
 
-/* Specials Section */
+
 .specials-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -53,7 +53,7 @@
 
 .specials-container h2 {
   font-size: 2.5rem;
-  color: #ff6f61;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,11 @@
   margin: 15px;
   padding: 20px;
   border-radius: 10px;
+
   background-color: #17ee4d;
+
+  background-color: #11763b;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -92,9 +96,7 @@
   color: #666;
 }
 
-/* App.css */
 
-/* --- Home Page Content Styling --- */
 .home-content-container {
   display: flex;
   justify-content: center;
@@ -103,6 +105,7 @@
   gap: 30px; 
   padding: 50px 20px;
   background-color: #e04747;
+  background-color: #074a11;
   min-height: 600px;
   box-sizing: border-box;
 }

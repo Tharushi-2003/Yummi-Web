@@ -1,12 +1,11 @@
-/* Header.css */
 
 .header-container {
-  background-color: #ff6347; /* A vibrant orange color */
-  color: #fff;
+  color: #fffcfc;
   text-align: center;
   padding: 50px 20px;
   font-family: sans-serif;
 }
+
 
 .header-content h1 {
   font-size: 3rem;
@@ -52,3 +51,5 @@
 .navbar a:hover {
   color: #ffffff;
 }
+
+
