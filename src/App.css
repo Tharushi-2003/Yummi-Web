@@ -1,4 +1,4 @@
-/* ------------------- NAVIGATION BAR ------------------- */
+/* Navigation Bar */
 .navbar {
   background-color: #ff6f61;
   padding: 15px 30px;
@@ -43,72 +43,7 @@
   font-weight: bold;
 }
 
-/* ------------------- HERO SECTION ------------------- */
-#hero {
-  background: url("/images/hero-bg.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-#hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-#hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-#hero button {
-  background-color: #ff6b35;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#hero button:hover {
-  background-color: #e55a2b;
-}
-
-/* ------------------- CATEGORY NAVIGATION ------------------- */
-.category-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 30px auto;
-  flex-wrap: wrap;
-}
-
-.category-nav button {
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.category-nav button:hover {
-  background-color: #e85a4f;
-  transform: scale(1.05);
-}
-
-.category-nav button.active {
-  background-color: #d94f3d;
-}
-
-/* ------------------- SPECIALS SECTION ------------------- */
+/* Specials Section */
 .specials-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -127,7 +62,7 @@
   margin: 15px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff8f7;
+  background-color: #17ee4d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -157,7 +92,9 @@
   color: #666;
 }
 
-/* ------------------- HOME PAGE LAYOUT ------------------- */
+/* App.css */
+
+/* --- Home Page Content Styling --- */
 .home-content-container {
   display: flex;
   justify-content: center;
@@ -165,7 +102,7 @@
   flex-wrap: wrap;
   gap: 30px; 
   padding: 50px 20px;
-  background-color: #f7f7f7;
+  background-color: #e04747;
   min-height: 600px;
   box-sizing: border-box;
 }
@@ -198,7 +135,7 @@
   transform: scale(1.03);
 }
 
-/* ------------------- RESPONSIVE DESIGN ------------------- */
+
 @media (max-width: 1200px) {
   .home-main-image {
     max-width: 600px;
