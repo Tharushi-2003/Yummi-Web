@@ -1,6 +1,5 @@
-/* ===== FOOTER ===== */
 .footer {
-  background-color: #222; /* Dark background */
+  background-color: #222;
   color: #fff;
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
@@ -15,7 +14,6 @@
   gap: 30px;
 }
 
-/* About Section */
 .footer-section.about {
   flex: 1;
   min-width: 250px;
@@ -23,7 +21,7 @@
 
 .footer-section.about h2 {
   font-size: 26px;
-  color: #ff4d4d; /* Pizza red color */
+  color: #ff4d4d; 
   margin-bottom: 15px;
 }
 
@@ -33,7 +31,6 @@
   color: #ddd;
 }
 
-/* Quick Links */
 .footer-section.links {
   flex: 1;
   min-width: 200px;
@@ -93,13 +90,13 @@
 
 }
 
-/* Copyright */
+
 .footer-section.social p {
   font-size: 12px;
   color: #aaa;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
