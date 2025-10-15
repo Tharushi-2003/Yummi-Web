@@ -1,86 +1,72 @@
-import React, { useState, useEffect } from 'react';
-import './Special.css'; 
+import React, { useState } from 'react';
+import './Special.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-export default function Special() {
-  const dish1 = {
-    title: "Grilled Salmon with Lemon Butter",
-    desc: "Tender fillet, seared to perfection with roasted veggies and lemon-butter sauce.",
-    price: "Rs.1200.00",
-    image: "/images/grilled-lemon-butter-salmon-9smb-7.jpg"
-  };
-
-  const dish2 = {
-    title: "Roasted Chicken with Herbs",
-    desc: "Juicy chicken roasted with rosemary and thyme.",
-    price: "Rs.900.00",
-    image: "/images/Roasted-Chicken-Garlic-Herbs-06.jpg"
-  };
-
-  const dish3 = {
-    title: "Veggie Pasta Primavera",
-    desc: "Fresh vegetables tossed with penne pasta and light sauce.",
-    price: "Rs.700.00",
-    image: "/images/pasta-primavera-2.jpg"
-  };
-
-  const dish4 = {
-    title: "Beef Steak with Garlic Butter",
-    desc: "Succulent steak grilled to perfection with garlic butter topping.",
-    price: "Rs.1500.00",
-    image: "/images/images.jpg"
-  };
-
-  const dish5 = {
-    title: "Chocolate Lava Cake",
-    desc: "Warm chocolate cake with molten chocolate center, served with ice cream.",
-    price: "Rs.600.00",
-    image: "/images/20250325120225-how-20to-20make-20chocolate-20molten-20lava-20cake-20in-20the-20microwave.webp"
-  };
-
-  const dishes = [dish1, dish2, dish3, dish4, dish5];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
+const specials = [
+  {
+    id: 1,
+    name: 'Chocolate Lava Cake',
+    description: 'Warm chocolate cake with rich molten chocolate center and a side of ice cream.',
+    price: 'Rs. 800.00',
+    image: '/images/lava-cake.jpg'
+  },
+  {
+    id: 2,
+    name: 'Grilled Salmon with Lemon Butter',
+    description: 'Fresh greens, grilled chicken, and a zesty dressing for a healthy delight.',
+    price: 'Rs. 950.00',
+    image: '/images/grilled-lemon-butter-salmon-9smb-7.jpg'
+  },
+  {
+    id: 3,
+    name: 'Veggie Pasta Primavera',
+    description: 'Fresh vegetables tossed with penne pasta and light sauce.',
+    price: 'Rs. 1200.00',
+    image: '/images/pasta-primavera-2.jpg'
+  },
+  {
+    id: 4,
+    name: 'Beef Steak with Garlic Butter',
+    description: 'Succulent steak grilled to perfection with garlic butter topping.',
+    price: 'Rs. 1200.00',
+    image: '/images/images.jpg'
+  },
+  {
+  id: 5,
+    name: 'Roasted Chicken with Herbs',
+    description: 'Juicy chicken roasted with rosemary and thyme.',
+    price: 'Rs. 1200.00',
+    image: '/images/Roasted-Chicken-Garlic-Herbs-06.jpg'
+  }
   
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % dishes.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [dishes.length]);
+];
 
-  const currentDish = dishes[currentIndex];
+const Special = () => {
+  const [current, setCurrent] = useState(0);
+
+  const nextDish = () => {
+    setCurrent((prev) => (prev + 1) % specials.length);
+  };
+
+  const prevDish = () => {
+    setCurrent((prev) => (prev - 1 + specials.length) % specials.length);
+  };
 
   return (
-    <div className="specials-container">
-      <h2 className="page-heading">Our Special Dishes</h2>
-
-      <div className="dish-card-wrapper">
-        
-        <button 
-          className="arrow left" 
-          onClick={() => setCurrentIndex((prev) => (prev - 1 + dishes.length) % dishes.length)}
-        >
-          ❮
-        </button>
-
-        
-        <div className="dish-card">
-          <img src={currentDish.image} alt={currentDish.title} className="dish-image" />
-          <div className="dish-info">
-            <h2 className="dish-title">{currentDish.title}</h2>
-            <p className="dish-desc">{currentDish.desc}</p>
-            <p className="dish-price">Price: {currentDish.price}</p>
-          </div>
+    <div className="special-page">
+      <h2 className="special-heading">OUR SPECIAL DISHES</h2>
+      <div className="special-container">
+        <button className="nav-btn left" onClick={prevDish}><FaChevronLeft /></button>
+        <div className="special-card">
+          <img src={specials[current].image} alt={specials[current].name} />
+          <h3>{specials[current].name}</h3>
+          <p>{specials[current].description}</p>
+          <span className="price">Price: {specials[current].price}</span>
         </div>
-
-       
-        <button 
-          className="arrow right" 
-          onClick={() => setCurrentIndex((prev) => (prev + 1) % dishes.length)}
-        >
-          ❯
-        </button>
+        <button className="nav-btn right" onClick={nextDish}><FaChevronRight /></button>
       </div>
     </div>
   );
-}
+};
+
+export default Special;
